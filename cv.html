@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dylan Tizguine - CV en ligne</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    </head>    
+<body>
+    <header>
+        <h1>Dylan Tizguine</h1>
+        <h2>Ingénieur informatique - France</h2>
+        <button id="download-pdf">Télécharger le CV en PDF</button>
+    </header>
+    <div class="content" >
+        <section style="page-break-inside: avoid;">
+            <h2>Expériences</h2>
+            <div class="experience">
+                <h3>Crédit Agricole Consumer Finance</h3>
+                <h4>Ingénieur d'études</h4>
+                <p class="duration">septembre 2022 - présent</p>
+                <ul>
+                    <li>Conception, développement et déploiement d'API en Java (Spring Boot).</li>
+                    <li>DevOps (Docker, GitLab, Kubernetes, CI/CD).</li>
+                </ul>
+            </div>
+            <div class="experience" >
+                <h3>Secupro</h3>
+                <h4>Agent de prévention et de sécurité</h4>
+                <p class="duration">mai 2021 - juin 2022</p>
+                <ul>
+                    <li>Agent de prévention et de sécurité lors d'événements publics et privés.</li>
+                </ul>
+            </div>
+        </section>
+        <section style="page-break-inside: avoid;">
+            <h2>Formation</h2>
+            <h3>EFREI Paris</h3>
+            <p class="duration">2022 - 2024</p>
+            <p>Master, double diplôme, Développeur, manager full stack (septembre 2022 - septembre 2024)</p>
+            <h3>Université Paris-Est Créteil (UPEC)</h3>
+            <p class="duration">2019 - 2022</p>
+            <p>Licence informatique, Informatique</p>
+            <ul>
+                <li>Apprentissage des paradigmes de programmation</li>
+                <li>Cours théoriques et pratiques sur les algorithmes et complexités</li>
+                <li>Cours de réseau, cryptographie, logique, mathématiques liées à l'informatique et Anglais</li>
+            </ul>
+            <h3>Lycée condorcet Montreuil</h3>
+            <p class="duration">2018 - 2019</p>
+            <p>Terminale generale Scientifique spécailité ISN (2018 - 2019)</p>
+        </section>
+    </div>
+    <div class="content" >
+        <section style="page-break-inside: avoid;">
+            <h2>Principales compétences</h2>
+            <h3>Coding Languages</h3>
+            <p>JavaScript, HTML/CSS, Python, Java, C, Ocaml, Lua, Php, SQL</p>
+            <h3>Frameworks/Systems</h3>
+            <p>Visual Studio, Anaconda, Eclipse, Laravel, Spring            boot, docker, kubernetes, Vault</p>
+        </section>
+        <section style="page-break-inside: avoid;" >
+            <h2>Projets</h2>
+            <ul>
+                <li>Puissance 4, Pacman, Snake en Java.</li>
+                <li>Site de gestion d'emploi du temps en Php/Laravel.</li>
+                <li>Site de commande de pizza en Php/Laravel.</li>
+            </ul>
+        </section>
+      
+        <section class="certifications" style="page-break-inside: avoid;">
+            <h2>Certifications</h2>
+            <ul>
+              <li><a href="https://www.linkedin.com/learning/certificates/9e85fb289748466b8c8e2b341e1185e4e5eca4f0f3a11fcfe2f1ff2953913687?u=133225306" target="_blank">Les fondements du DevOps</a></li>
+              <li><a href="https://www.linkedin.com/learning/certificates/076d2480ddeae7d54731bbec2810d232b40052ba53994db93b2a197ad5cd405d?u=133225306" target="_blank">Préparer votre carrière dans le développement logiciel</a></li>
+              <li><a href="https://www.linkedin.com/learning/certificates/52846f408812b59b342eb7f718cc81e3d0a2508f404a0124097d1a5d8ae9e12f?u=133225306" target="_blank">Les fondements de la gestion de projet : Le risque</a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Coordonnées</h2>
+            <ul>
+                <li>Téléphone : 0601306753</li>
+                <li>Email : <a href="#" id="email-link"></a></li>
+                <li>LinkedIn : <a href="https://www.linkedin.com/in/dylan-tizguine-6561831b5" target="_blank">www.linkedin.com/in/dylan-tizguine-6561831b5</a></li>
+            </ul>
+        </section>
+    
+          
+    <script src="index.js"></script>
+</body>
+</html>
+

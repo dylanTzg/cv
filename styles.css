@@ -1,0 +1,321 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #ebebeb; /* add this line to set the background color */
+}
+
+header {
+    background-color: #182d3f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+section {
+    margin: 2rem 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #1c3144;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #162435;
+}
+
+h3 {
+    color: #1c3144;
+    font-weight: bold;
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #1c3144;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.duration {
+    color: #055daa;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+
+.fadeIn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fadeIn.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  section ul li {
+    position: relative;
+  }
+  
+  section ul li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #1c3144;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  section ul li:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  section {
+    flex: 1;
+    min-width: calc(33.333% - 2rem);
+  }
+
+  /* styles.css */
+
+#download-pdf {
+    background-color: #4CAF50; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Affichage en ligne */
+    font-size: 16px; /* Taille du texte */
+    margin: 10px 2px; /* Marges */
+    cursor: pointer; /* Curseur en forme de main */
+    border-radius: 4px; /* Bords arrondis */
+  }
+  
+  #download-pdf:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+  }
+  
+/* styles.css */
+
+.no-print {
+    display: none !important;
+  }
+  .loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  a:hover {
+    color: #3498db;
+    transition: color 0.2s ease-in-out;
+  }
+  .fadeIn {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  .skills li:before {
+    content: "\f121";
+    font-family: "FontAwesome";
+    margin-right: 10px
+  }
+  /* Polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Couleurs */
+:root {
+  --primary-color: #003553;
+  --secondary-color: #f9f9f9;
+  --tertiary-color: #c7c7c7;
+  --highlight-color: #470000;
+}
+
+/* Réinitialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles de base */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: var(--primary-color);
+  line-height: 1.5;
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--highlight-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+header button {
+  background-color: var(--highlight-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+header button:hover {
+  opacity: 0.8;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--tertiary-color);
+  padding-bottom: 1rem;
+}
+
+section ul li::before {
+  content: '\2022';
+  color: var(--highlight-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.experience {
+  margin-bottom: 2rem;
+}
+
+.experience h3, .experience h4 {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.experience h4 {
+  color: var(--highlight-color);
+}
+
+.experience p {
+  font-style: italic;
+  margin-bottom: 1rem
+}  
